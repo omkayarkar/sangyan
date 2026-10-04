@@ -1,0 +1,70 @@
+ .env.example                                    |    0
+ .gitignore                                      |   23 [32m+[m
+ README.md                                       |  101 [32m+[m
+ backend/.env.example                            |    0
+ backend/app/__init__.py                         |    0
+ backend/app/api/__init__.py                     |    0
+ backend/app/api/analyze.py                      |  142 [32m+[m
+ backend/app/config.py                           |   18 [32m+[m
+ backend/app/core/__init__.py                    |    0
+ backend/app/main.py                             |   34 [32m+[m
+ backend/app/models/__init__.py                  |    0
+ backend/app/models/schemas.py                   |   99 [32m+[m
+ backend/app/services/__init__.py                |    0
+ backend/app/services/ai_analyzer.py             |  199 [32m++[m
+ backend/app/services/ocr.py                     |   54 [32m+[m
+ backend/app/services/risk_engine.py             |  558 [32m+++[m
+ backend/app/services/verifier.py                |   95 [32m+[m
+ backend/app/utils/__init__.py                   |    0
+ backend/requirements.txt                        |   13 [32m+[m
+ backend/tests/__init__.py                       |    0
+ backend/tests/test_risk_engine.py               |  143 [32m+[m
+ docs/API.md                                     |   85 [32m+[m
+ docs/ARCHITECTURE.md                            |   44 [32m+[m
+ docs/DEMO.md                                    |   28 [32m+[m
+ docs/SECURITY.md                                |   10 [32m+[m
+ frontend/.env.example                           |    0
+ frontend/README.md                              |    0
+ frontend/index.html                             |   16 [32m+[m
+ frontend/next-env.d.ts                          |    5 [32m+[m
+ frontend/package-lock.json                      | 4176 [32m+++++++++++++++++++++++[m
+ frontend/package.json                           |   35 [32m+[m
+ frontend/postcss.config.js                      |    6 [32m+[m
+ frontend/src/App.tsx                            |   76 [32m+[m
+ frontend/src/BottomNav.tsx                      |   54 [32m+[m
+ frontend/src/DecisionJournal.tsx                |  464 [32m+++[m
+ frontend/src/FlagList.tsx                       |   76 [32m+[m
+ frontend/src/GrievanceAssistant.tsx             |  335 [32m++[m
+ frontend/src/Header.tsx                         |  139 [32m+[m
+ frontend/src/HomePage.tsx                       |  130 [32m+[m
+ frontend/src/RiskScoreBadge.tsx                 |  127 [32m+[m
+ frontend/src/ScamVerifier.tsx                   |  370 [32m++[m
+ frontend/src/TipProfiler.tsx                    |  199 [32m++[m
+ frontend/src/VoiceExplainer.tsx                 |  348 [32m++[m
+ frontend/src/app/globals.css                    |   21 [32m+[m
+ frontend/src/app/layout.tsx                     |   21 [32m+[m
+ frontend/src/app/page.tsx                       |   85 [32m+[m
+ frontend/src/components/GuardrailNotice.tsx     |   38 [32m+[m
+ frontend/src/components/Header.tsx              |   64 [32m+[m
+ frontend/src/components/InputSection.tsx        |  210 [32m++[m
+ frontend/src/components/InteractiveVerifier.tsx |  101 [32m+[m
+ frontend/src/components/PersonaCard.tsx         |   40 [32m+[m
+ frontend/src/components/ResultCard.tsx          |  256 [32m++[m
+ frontend/src/contexts/LanguageContext.tsx       |  154 [32m+[m
+ frontend/src/i18n/en.json                       |  283 [32m++[m
+ frontend/src/i18n/hi.json                       |  283 [32m++[m
+ frontend/src/index.css                          |   42 [32m+[m
+ frontend/src/lib/api.ts                         |  117 [32m+[m
+ frontend/src/lib/i18n.ts                        |   68 [32m+[m
+ frontend/src/lib/scamDetector.ts                |  259 [32m++[m
+ frontend/src/lib/types.ts                       |   44 [32m+[m
+ frontend/src/lib/voice.ts                       |   59 [32m+[m
+ frontend/src/main.tsx                           |   13 [32m+[m
+ frontend/src/types/index.ts                     |   60 [32m+[m
+ frontend/src/vite-env.d.ts                      |   37 [32m+[m
+ frontend/tailwind.config.js                     |  104 [32m+[m
+ frontend/tsconfig.app.json                      |   30 [32m+[m
+ frontend/tsconfig.json                          |    7 [32m+[m
+ frontend/tsconfig.node.json                     |   22 [32m+[m
+ frontend/vite.config.ts                         |   16 [32m+[m
+ 69 files changed, 10636 insertions(+)
